@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">Grocery</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="addtocart.html">Add to Cart</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h2>Fresh Groceries, Delivered to Your Doorstep</h2>
+        <p>Shop fresh and organic products at the best prices.</p>
+        <input type="text" id="search-bar" placeholder="Search for groceries...">
+        <button onclick="shopNow()">Shop Now</button>
+    </header>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <h3><u>Shop by Category</u></h3>
+        <div class="category-container">
+            <div class="category">
+                <img src="fruits.jpg" alt="Fruits">
+                <h4>Fruits</h4>
+                <p>Fresh and organic</p>
+            </div>
+            <div class="category">
+                <img src="vegetables.jpg" alt="Vegetables">
+                <h4>Vegetables</h4>
+                <p>Locally sourced</p>
+            </div>
+            <div class="category">
+                <img src="Dairy.jpg" alt="Dairy">
+                <h4>Dairy</h4>
+                <p>Milk, cheese, and more</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products">
+        <h3>Best Selling Products</h3>
+        <div class="product-container" id="product-list">
+            <!-- Products will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Grocery Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
